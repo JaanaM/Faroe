@@ -1,0 +1,361 @@
+/*--------------------------- */
+/* Basic Setup */
+/*----------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Colors
+#16222B royal-blue
+#616E78 polar-blue
+#E9EAEB silver grey
+*/
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color:#16222B;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+.clearfix{zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/* ----- Headings ----- */
+
+h1, h2, h3
+{
+    font-weight: 300;
+    font-family: 'Playfair Display', serif;
+}
+h1{
+    text-transform: capitalize;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 500%;
+    font-weight: 300;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    color: #E9EAEB;
+}
+h2 {
+    font-size: 225%;
+}
+
+/* HEADER */
+header{
+/* The image used */
+background-image: url("../img/lachlan-gowen-1header-min.jpg");
+/* Full height */
+height: 90vh;
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 30%;
+    left: 10%;
+}
+.main-nav{
+    float: right;
+    list-style: none;
+}
+.main-nav li {
+    display: inline-block;
+    margin-top: 15%;
+    margin-left: 40px;
+}
+.main-nav li a:link, 
+.main-nav li a:visited{
+    padding: 5px 0;
+    color: #16222B;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+.main-nav li a:hover, 
+.main-nav li a:active{
+    border-bottom: 2px solid #E9EAEB;
+}
+
+/* CONTENT */
+.section-info h2 {
+    padding-right: 105px;
+    margin-left: 40px;
+    margin-bottom: 50px;
+}
+.content
+{
+    padding: 80px 80px 80px 250px;
+    line-height: 1.6;
+    font-size: 70%;
+}
+
+.small-caption{
+    font-size: 60%;
+    margin-top: 30px;
+    padding-bottom: 80px;
+    margin-left: 40px;
+}
+
+.overlap-img{
+    margin-top: -150px;
+    padding-left: 50px;
+}
+.overlap-img img {
+    max-width: 500px;
+
+}
+
+
+
+
+/*--------------------------- */
+/* Reusable components */
+/*----------------------------- */
+.row{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+section{
+    padding: 90px 0;
+}
+
+
+/* SLICK SLIDER */
+
+.slider {
+    width: 100%;
+    max-height: 800px;
+    overflow: hidden;
+}
+.slider h3{
+position: absolute;
+ top: 50%;
+ left: 15%;
+ -webkit-transform: translate(-50%, -50%);
+ transform: translate(-50%, -50%);
+ color: white;
+ font-size: 200%;
+ -webkit-transition: all 300ms ease;
+ transition: all 300ms ease;
+ text-transform: capitalize;
+}
+
+.slide {
+    position: relative;
+}
+
+.slick-slide {
+  margin: 0 20px;
+}
+.slick-slide img {
+  width: 100%;
+  object-fit: scale-down;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color:#16222B;
+}
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+/* Places */
+
+.pictures li {
+    list-style: none;
+    padding-bottom: 30px;
+}
+.pictures img {
+    width: 250px
+}
+.pictures img:hover {
+    src: url("../img/place_hover-min.jpg");
+}
+
+.places {
+    margin-top: 25px;
+}
+.places li {
+    padding: 5px 0;
+    margin-right: 80px;
+    list-style: none;
+    border-bottom: 2px solid #E9EAEB;
+    margin-bottom: 20px;
+
+}
+
+.tools {
+    margin-top: 25px;
+    margin-bottom: 80px;
+}
+.tools li {
+    padding: 5px 0;
+    list-style: none;
+    margin-bottom: 10px;
+}
+.map {
+    margin-top: 40px;
+}
+
+/* Wildlife */
+.animals{
+    margin-right: 50px;
+}
+.environment {
+    margin-top: 60px;
+    padding-top: 30px
+}
+
+.environment li {
+    list-style: none;
+}
+
+.environment li a:link, 
+.environment li a:visited{
+    padding: 10px 0;
+    color: #16222B;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+.environment li a:hover, 
+.environment li a:active{
+    border-bottom: 2px solid #616E78;
+}
+
+.gallery, .wildlife-gallery{
+    margin: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 90px;
+}
+
+.gallery-slider {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px; 
+}
+
+
+/* .place :hover {
+    width: 350px;
+    height: 200px;
+    background: url("../img/place_hover-min.jpg") no-repeat;
+} */
+
+/*Activities */
+
+.dark {
+    background-color: #16222B;
+    color: #E9EAEB;
+}
+
+.dark h2 {
+    padding-right: 150px;
+}
+
+.lighthouse {
+    margin-top: 80px;
+    max-width: 80%;
+}
+
+.field {
+    margin-top: -380px;
+    max-width: 70%;
+}
+.activities {
+    margin-left:14%;
+    padding-top: 80px;
+}
+.activities li {
+    list-style: none;
+    line-height: 1.6;
+}
+.guide {
+    padding-top: 100px;
+}
+.guide li a:link, 
+.guide li a:visited{
+    padding: 5px 0;
+    color: #E9EAEB;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+.guide li a:hover, 
+.guide li a:active{
+    border-bottom: 2px solid #616E78;
+}
+
+/* Blog */
+.blog-content {
+    margin-top: 25%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.blog_img {
+    width:50%;
+}
+
+/* Footer */
+footer {
+    font-size: 90%;
+    padding: 80px 0;
+}
+
+footer li{
+    list-style: none;
+    line-height: 1.6;
+}
+
+.logo img{
+    width: 300px;
+}
+.newsletter {
+    padding-top: 20px;
+}
+.newsletter li a:link, 
+.newsletter li a:visited{
+    padding: 5px 0;
+    color: #16222B;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+.newsletter li a:hover, 
+.newsletter li a:active{
+    border-bottom: 2px solid #616E78;
+}
